@@ -1,0 +1,126 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+#myform {
+	margin:0 auto;
+	width:500px;
+	padding:14px;
+}
+
+label {
+	width: 10em;
+	float: left;
+	margin-right: 0.5em;
+	display: block;
+	vertical-align: middle;
+}
+.submit {
+	float:right;
+}
+
+fieldset {
+	background:#EBF4FB none repeat scroll 0 0;
+	border:2px solid #B7DDF2;
+	width: 450px;
+}
+
+legend {
+	color: #fff;
+	background: #80D3E2;
+	border: 1px solid #781351;
+	padding: 2px 6px
+}
+.elements {
+	padding:10px;
+}
+p {
+	border-bottom:1px solid #B7DDF2;
+	color:#666666;
+	font-size:12px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+}
+span {
+	color:#666666;
+	font-size:12px;
+	margin-bottom:1px;
+	
+}
+
+ #data-history {
+	background:lightgrey;
+  }
+  /* .button { */
+	/*background: #ecf0f1;*/
+	/* text-align: left; */
+	/* position: relative;
+right: 10px;
+top: 5px;
+  } */ 
+  /* <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> */
+
+* {
+	font-size: 18px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.5em;
+  }
+  .tool-tip {
+	  position:relative;
+	  text-align:center
+  }
+  .inner-box {
+	width: 100%;
+	max-width: 450px;
+	margin: 80px auto;
+  }
+  input {
+	height: 50px;
+	width: 100%;
+	float: left;
+	margin: 10px 0;
+	padding:0 15px;
+  }
+  .has-tip {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: -7px;
+	background: url(https://image.freepik.com/free-icon/information-circle_318-27255.jpg)
+	  no-repeat right center / contain;
+	cursor: pointer;
+	position: relative;
+  }
+  .has-tip:hover:before {
+	content: attr(data-tip);
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	background: #ddf;
+	border: 1px solid #ebebeb;
+	padding: 20px;
+	bottom: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	box-shadow: 0 5px 10px #000;
+  }
+  .has-tip:hover:after {
+	content: "";
+	position: absolute;
+	left: calc(390px);
+	background: #ddf;
+	width: 20px;
+	height: 20px;
+	transform: rotate(0deg);
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	border-radius:50%;
+	bottom: 10px;
+	box-shadow: 5px 5px 7px #000;
+  }
+  

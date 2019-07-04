@@ -1,0 +1,47 @@
+
+#myform {
+	margin:0 auto;
+	width:500px;
+	padding:14px;
+}
+
+label {
+	width: 10em;
+	float: left;
+	margin-right: 0.5em;
+	display: block;
+	vertical-align: middle;
+}
+.submit {
+	float:right;
+	background:lightgrey;
+}
+
+fieldset {
+	background:#EBF4FB none repeat scroll 0 0;
+	border:2px solid #B7DDF2;
+	width: 450px;
+}
+
+legend {
+	color: #fff;
+	background: #80D3E2;
+	border: 1px solid #781351;
+	padding: 2px 6px
+}
+.elements {
+	padding:10px;
+}
+p {
+	border-bottom:1px solid #B7DDF2;
+	color:#666666;
+	font-size:12px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+}
+span {
+	color:#666666;
+	font-size:12px;
+	margin-bottom:1px;
+	
+}

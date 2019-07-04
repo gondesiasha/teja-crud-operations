@@ -1,0 +1,32 @@
+
+<div class="loginform"  (click)="autoFocus()">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <h3>login form</h3>
+              <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                  <div class="form-group">
+                      <label for="firstName">user Name</label>
+                      <input type="text" autofocus="" class="form-control input-group input-group-seamless" name="username" [(ngModel)]="model.username" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required  autocomplete="off"/><br>
+                      <div *ngIf="f.submitted && username.invalid" class="invalid-feedback">
+                          <div *ngIf="username.errors.required">user Name is required</div>
+                      </div>
+                  </div>
+                <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control input-group input-group-seamless" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required />
+                      <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                          <div *ngIf="password.errors.required">Password is required</div>
+                         
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <button class="btn btn-primary" (click)="onSubmit()"><a>submit</a></button>
+                      <button class="btn btn-primary" (click)="cancel()">cancel</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+  
